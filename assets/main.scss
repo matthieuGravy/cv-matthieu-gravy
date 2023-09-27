@@ -12,26 +12,39 @@
   -webkit-text-size-adjust: 100%;
   --color-1: #fceb36;
   --color-2: #1f1f1f;
+  --color-2-hint-1: #292929;
+  --color-2-hint-2: #333333;
   --color-3: #4bd25b;
   --color-4: #fff7d6;
   --color-5: #cc3e58;
   --font-principal: "Rajdhani", sans-serif;
-
+  max-width: 1280px;
+  background-image: url(../GRAVY-trans.png);
   body {
     margin: 0;
     display: flex;
     color: var(--color-4);
     .cv {
-      max-width: 1920px;
       background-color: var(--color-2);
       display: grid;
       min-width: 100%;
       min-height: 100vh;
       display: grid;
       grid:
-        "top top top" 40vh
+        "top top top" 50vh
+        "logos logos logos" auto
         "colone-left content content" auto
-        / 20vh auto auto;
+        "skills skills skills" 55vh
+        / 15rem auto auto;
+      @media screen and (max-width: 500px) {
+        grid:
+          "top top top" 50vh
+          "logos logos logos" auto
+          "content content content" auto
+          "skills skills skills" 55vh
+          / 15rem auto auto;
+      }
+
       .top {
         grid-area: top;
         position: relative;
@@ -43,40 +56,85 @@
         background-position: center center;
         .wrap {
           flex: 1;
-          background: linear-gradient(
-            to left,
-            var(--color-1),
-            var(--color-5),
-            var(--color-3),
-            var(--color-2)
-          );
-          opacity: 0.6;
+          background: var(--color-2);
+          opacity: 0.8;
         }
         .titre {
-          background-color: var(--color-2);
+          z-index: 1;
+          background: linear-gradient(
+            to bottom,
+            var(--color-2-hint-1),
+            var(--color-2)
+          );
           position: absolute;
-          bottom: 10vh;
-          left: -10vh;
-          transform: rotate(270deg);
-          width: 40vh;
-          height: 20vh;
+          top: 0;
+          left: 0;
+          width: 15rem;
+          height: 50vh;
           text-align: right;
+          position: fixed;
+          display: flex;
+          transform: rotate(180deg);
+          @media screen and (max-width: 299px) {
+            opacity: 0.5;
+            width: 100%;
+          }
           h1,
           h2 {
-            padding-right: 2vh;
+            padding-bottom: 1rem;
             font-size: 4vh;
             margin: 0;
+            text-transform: uppercase;
+            word-spacing: 0.4rem;
+            letter-spacing: 0.1rem;
           }
           h1 {
             color: var(--color-5);
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
           }
           h2 {
             color: #fceb36;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            margin-left: 2rem;
           }
         }
       }
+      .logos {
+        max-width: 1280px;
+        z-index: 5;
+        background-color: var(--color-2);
+        grid-area: logos;
+        padding-left: 15rem;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2% 2% 2% 15rem;
+        img {
+          margin: 0;
+        }
+        @media screen and (max-width: 767px) and (min-width: 300px) {
+          img {
+            margin: 0.5rem;
+          }
+        }
+        @media screen and (min-width: 300px) and (max-width: 500px) {
+          padding-left: 2%;
+        }
+        @media screen and (max-width: 299px) {
+          flex-direction: column;
+          padding-left: 0;
+          gap: 2vh;
+          padding-top: 2vh;
+        }
+      }
       .colone-left {
+        z-index: 5;
         grid-area: colone-left;
+        background-color: var(--color-2);
         figure {
           padding: 0;
           margin: 0;
@@ -90,11 +148,94 @@
             margin: auto;
           }
         }
+        @media screen and (max-width: 500px) {
+          display: none;
+        }
       }
       .content {
+        z-index: 5;
         grid-area: content;
-        details {
-          display: inline-block;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5vh;
+        max-width: 1280px;
+        background-color: var(--color-2);
+        @media screen and (max-width: 500px) {
+          padding-left: 2%;
+        }
+        .resume {
+          background: linear-gradient(
+            to bottom,
+            var(--color-2-hint-1),
+            var(--color-2)
+          );
+          height: 213.33px;
+          overflow: auto;
+          padding: 1%;
+          box-sizing: border-box;
+        }
+        .exp {
+          background: linear-gradient(
+            to bottom,
+            var(--color-2-hint-1),
+            var(--color-2)
+          );
+          box-sizing: border-box;
+          padding: 1%;
+          height: 910px;
+          overflow: auto;
+          h2 {
+            margin-top: 0;
+          }
+          article {
+            background: linear-gradient(
+              to bottom,
+              var(--color-2-hint-2),
+              var(--color-2-hint-1)
+            );
+            padding: 2%;
+            h3 {
+              margin: 0;
+            }
+            h4 {
+              margin: 0;
+              margin-top: 1%;
+            }
+            ul {
+              list-style-type: none;
+              padding: 0;
+              margin: 0;
+              margin-top: 1%;
+              display: flex;
+              li {
+                padding: 0 0.3rem;
+              }
+            }
+          }
+        }
+      }
+      .skills {
+        grid-area: skills;
+        z-index: 2;
+        background-color: var(--color-2);
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        p {
+          text-align: center;
+          width: 100%;
+        }
+        .wrapper {
+          z-index: 3;
+          background-color: var(--color-2);
+          max-width: 1280px;
+          height: 40vh;
+          position: absolute;
+          left: 0;
+          bottom: 10vh;
+          position: fixed;
+          width: 100%;
+          max-width: 1280px;
         }
       }
     }
