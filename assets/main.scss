@@ -32,7 +32,26 @@
         / 20vh auto auto;
       .top {
         grid-area: top;
-        background-color: red;
+        display: flex;
+        position: relative;
+        background-color: var(--color-2);
+        display: flex;
+        .infos {
+          position: absolute;
+          top: 30%;
+          left: 50%;
+          width: 90%;
+          transform: translate(-50%, -50%);
+          height: 200px;
+          z-index: 2;
+          background-color: red;
+        }
+        video {
+          z-index: 1;
+          width: 100%;
+          opacity: 0.45;
+          background-clip: content-box;
+        }
       }
       .colone-left {
         grid-area: colone-left;
