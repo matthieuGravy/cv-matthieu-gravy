@@ -20,8 +20,10 @@
   body {
     margin: 0;
     display: flex;
+    color: var(--color-4);
     .cv {
-      background-color: antiquewhite;
+      max-width: 1920px;
+      background-color: var(--color-2);
       display: grid;
       min-width: 100%;
       min-height: 100vh;
@@ -32,31 +34,49 @@
         / 20vh auto auto;
       .top {
         grid-area: top;
-        display: flex;
         position: relative;
-        background-color: var(--color-2);
+        overflow: hidden;
         display: flex;
-        .infos {
-          position: absolute;
-          top: 30%;
-          left: 50%;
-          width: 90%;
-          transform: translate(-50%, -50%);
-          height: 200px;
-          z-index: 2;
-          background-color: red;
+        justify-content: center;
+        background-image: url("../Light\ Blue\ and\ Green\ Watercolor\ Nature\ Desktop\ Wallpaper\ .svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        .wrap {
+          flex: 1;
+          background: linear-gradient(
+            to left,
+            var(--color-1),
+            var(--color-5),
+            var(--color-3),
+            var(--color-2)
+          );
+          opacity: 0.6;
         }
-        video {
-          z-index: 1;
-          width: 100%;
-          opacity: 0.45;
-          background-clip: content-box;
+        .titre {
+          background-color: var(--color-2);
+          position: absolute;
+          bottom: 10vh;
+          left: -10vh;
+          transform: rotate(270deg);
+          width: 40vh;
+          height: 20vh;
+          text-align: right;
+          h1,
+          h2 {
+            padding-right: 2vh;
+            font-size: 4vh;
+            margin: 0;
+          }
+          h1 {
+            color: var(--color-5);
+          }
+          h2 {
+            color: #fceb36;
+          }
         }
       }
       .colone-left {
         grid-area: colone-left;
-        background-color: purple;
-
         figure {
           padding: 0;
           margin: 0;
@@ -73,7 +93,9 @@
       }
       .content {
         grid-area: content;
-        background-color: blueviolet;
+        details {
+          display: inline-block;
+        }
       }
     }
   }
