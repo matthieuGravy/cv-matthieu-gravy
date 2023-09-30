@@ -12,4 +12,4 @@ However, I am actively working to address these problems to enhance the overall 
 
 ## sources
 
-<img src="matthieuGravy-webDev.png" alt="cv canva">
+<img width="500"src="matthieuGravy-webDev.png" alt="cv canva">
