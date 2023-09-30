@@ -9,3 +9,7 @@ This CV is currently based on an adaptation of an existing template. The templat
 **Scripts in the head:** Additionally, I initially placed scripts in the `<head>` section of the document, which also caused issues.
 
 However, I am actively working to address these problems to enhance the overall experience of my online CV.
+
+## sources
+
+<img src="matthieuGravy-webDev.png" alt="cv canva">
