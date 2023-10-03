@@ -38,7 +38,7 @@ However, I am actively working to address these problems to enhance the overall 
 > Navigate to the directory:
 >
 > ```sh
-> cd v-card
+> cd cv-matthieu-gravy
 > ```
 
 <br/>
