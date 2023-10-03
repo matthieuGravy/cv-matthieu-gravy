@@ -1,5 +1,5 @@
 # matthieu-gravy-cv
-You can visit the project at this [link]([https://www.example.com/my%20great%20page](https://matthieugravy.github.io/cv-matthieu-gravy)).
+You can visit the project at this [link]([https://www.example.com/my%20great%20page](https://matthieugravy.github.io/cv-matthieu-gravy).
 
 
 This CV is currently based on an adaptation of an existing template. The template I had used on Canva didn't fit perfectly for an online version. Nevertheless, I encountered some issues that slowed me down.
