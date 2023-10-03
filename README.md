@@ -57,7 +57,8 @@ However, I am actively working to address these problems to enhance the overall 
 > ```
 <br/>
 
-Please note that the installation instructions assume Node.js version 18 LTS is already installed. If you need further assistance or have any other questions, feel free to ask!
+> > Please note that the installation instructions assume Node.js version 18 LTS is already installed. If you need further assistance or have any other questions, feel free to ask!
+
 <br/>
 <br/>
 
