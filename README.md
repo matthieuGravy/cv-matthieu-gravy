@@ -34,20 +34,24 @@ However, I am actively working to address these problems to enhance the overall 
 <br/>
 
 ## How to install it? 
-Navigate to the directory:
+
+> Navigate to the directory:
+
 ```sh
 cd v-card
 ```
 
 <br/>
 
-Make sure you have Node.js version 18 LTS installed beforehand:
+> Make sure you have Node.js version 18 LTS installed beforehand:
+
 ```sh
 npm i
 ```
 <br/>
 
-And you can view the development version:
+> And you can view the development version:
+
 ```sh
 npm run dev
 ```
