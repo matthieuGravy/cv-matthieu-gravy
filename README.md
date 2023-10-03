@@ -36,10 +36,10 @@ However, I am actively working to address these problems to enhance the overall 
 ## How to install it? 
 
 > Navigate to the directory:
-
-```sh
-cd v-card
-```
+>
+> ```sh
+> cd v-card
+> ```
 
 <br/>
 
