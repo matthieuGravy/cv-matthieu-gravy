@@ -25,7 +25,7 @@ This CV is currently based on an adaptation of an existing template. The templat
 
 **Scripts in the head:** Additionally, I initially placed scripts in the `<head>` section of the document, which also caused issues.
 
-<br/>
+
 <br/>
 
 ## Is the project still in ongoing development?
@@ -33,6 +33,29 @@ However, I am actively working to address these problems to enhance the overall 
 <br/>
 <br/>
 
+## How to install it? 
+Navigate to the directory:
+```sh
+cd v-card
+```
+
+<br/>
+
+Make sure you have Node.js version 18 LTS installed beforehand:
+```sh
+npm i
+```
+<br/>
+
+And you can view the development version:
+```sh
+npm run dev
+```
+<br/>
+
+Please note that the installation instructions assume Node.js version 18 LTS is already installed. If you need further assistance or have any other questions, feel free to ask!
+<br/>
+<br/>
 
 
 ## sources
