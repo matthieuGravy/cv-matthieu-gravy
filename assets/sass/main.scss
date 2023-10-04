@@ -22,7 +22,7 @@
   --purcent-2: 2%;
 
   body {
-    background-image: url(../GRAVY-trans.png);
+    background-image: url("../images/GRAVY-trans.png");
     display: flex;
     margin: 0;
     color: var(--color-4);
@@ -57,7 +57,7 @@
         overflow: hidden;
         display: flex;
         justify-content: center;
-        background-image: url("../bxl.svg");
+        background-image: url("../images/bxl.svg");
         background-repeat: no-repeat;
         background-position: center center;
         max-height: 40vh;
