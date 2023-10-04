@@ -18,12 +18,13 @@
   --color-4: #fff7d6;
   --color-5: #cc3e58;
   --font-principal: "Rajdhani", sans-serif;
-  background-image: url(../GRAVY-trans.png);
-  display: flex;
-  justify-content: center;
+  --purcent-1: 1%;
+  --purcent-2: 2%;
+
   body {
-    margin: 0;
+    background-image: url(../GRAVY-trans.png);
     display: flex;
+    margin: 0;
     color: var(--color-4);
     flex-direction: column;
     justify-content: center;
@@ -177,7 +178,8 @@
           );
           height: 213.33px;
           overflow: auto;
-          padding: 1%;
+          padding: var(--purcent-1);
+          margin-right: var(--purcent-2);
           box-sizing: border-box;
         }
         .exp {
@@ -190,6 +192,9 @@
           padding: 1%;
           height: 910px;
           overflow: auto;
+          padding: var(--purcent-1);
+          margin-right: var(--purcent-2);
+          margin-top: var(--purcent-2);
           h2 {
             margin-top: 0;
           }
